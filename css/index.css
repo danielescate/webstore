@@ -18,8 +18,8 @@
 
 .item {
     display: inline-block;
-    margin-right: 3em;
-    margin-left: 3em;
+    margin-right: 2em;
+    margin-left: 2em;
 }
 
 h2 {
@@ -43,9 +43,7 @@ h2 {
 
 .filters button {
     border: none;
-    text-decoration: underline;
     margin-top: 1em;
-    margin-bottom: 1em;
 }
 
 #category {
@@ -117,6 +115,10 @@ h3 {
 p {
     font-family: 'Oswald', sans-serif;
     font-size: 1.1em;
+}
+
+section {
+    padding-top: 1em;
 }
 
 .products {
