@@ -3,9 +3,9 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>[Document title]</title>
-    <meta name="description" content="[A short description]">
-    <meta name="author" content="[Your Name]">
+    <title>Dan's Record Collection</title>
+    <meta name="description" content="web store">
+    <meta name="author" content="Daniel Escate">
     <link rel="stylesheet" href="css/reset.css"> <!-- You may change this "Reset" to "Normalize" if preferred -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <link rel="stylesheet" href="css/index.css">
@@ -13,80 +13,85 @@
   <body>
     <header>
       <!-- Site logo, replace with your own -->
-      <a href="index.html"><img src="img/logo.svg" alt="HTML Logo (replace this)"></a>
+      <div class="logo">
+      <a href="index.html"><img src="img/Dan's-Record-logo.png" alt="Dan's Record logo"></a>
+      </div>
 
-      <!-- Navigation menu and toggle button (non-functional) -->
-      <nav aria-label="Primary">
-        <button type="button">
-          <span class="material-icons">menu</span>
-        </button>
-        <ul>
-          <li><a href="#">Category</a>
-            <ul>
-              <li><a href="#">Subcategory</a></li>
-              <li><a href="#">Subcategory</a></li>
-              <li><a href="#">Subcategory</a></li>
-            </ul>
-          </li>
-          <li><a href="#">Category</a></li>
-          <li><a href="#">Category</a></li>
-          <li><a href="#">Category</a></li>
-        </ul>
-      </nav>
+      <!-- Navigation menu and toggle button (non-functional) --> 
+      <div class="topbar">
+        <div class="item">
+          <button type="button" onclick="navButton()">
+            <span class="material-icons">menu</span>
+          </button>
+          <div id="links">
+            <nav aria-label="Primary">
+              <ul>
+                <li><a href="#">History</a></li>
+                <li><a href="#">Genres</a>
+                  <ul>
+                    <li><a href="#">Alternative</a></li>
+                    <li><a href="#">Dance</a></li>
+                    <li><a href="#">Indie</a></li>
+                    <li><a href="#">Pop</a></li>
+                    <li><a href="#">Rap</a></li>
+                    <li><a href="#">Rock</a></li>
+                  </ul>
+                </li>
+                <li><a href="#">Newest Additions</a></li>
+                <li><a href="#">Dan's Picks</a></li>
+              </ul>
+            </nav>
+          </div>
+        </div>
 
       <!-- Search for a product (non-functional) -->
-      <form>
-        <label>Search
-          <input type="search" name="find" id="find">
-        </label>
-        <button type="button"><span class="material-icons">search</span></button>
-      </form>
+      <div class="item">
+        <form>
+            <button type="button" onclick="searchButton()">
+              <span class="material-icons">search</span>
+            </button>
+          <div id="search">
+            <label>Search
+              <input type="search" placeholder="Search" name="find" id="find">
+            </label>
+          </div>
+        </form>
+      </div>
 
       <!-- Additional nav links -->
-
-      <ul>
-        <li><a href="#"><span class="material-icons">favorite_border</span></a></li>
-        <li><a href="#"><span class="material-icons">shopping_cart</span></a></li>
-      </ul>
+        <div class="item">
+          <a href="#"><span class="material-icons">favorite_border</span></a>
+        </div>
+        <div class="item">
+          <a href="#"><span class="material-icons">shopping_cart</span></a>
+        </div>
+    </div>
     </header>
 
     <main>
       <header>
-        <h1>Sale on [Category Name]</h1>
-
         <!-- Filtering product form -->
-        <form>
-          <h2>Filters</h2>
-          <fieldset>
+        <div id="filtering" class="filters">
+          <button type="button" onclick="filterButton()"><h2>Filters &#9662;</h2></button>
+        <div id="category">
+          <fieldset class="show">
             <label for="sort">Show</label>
             <select name="sort" id="sort">
               <option value="price-high">Price, highest to lowest</option>
               <option value="price-low">Price, lowest to highest</option>
-              <option value="newest">Newest releases</option>
+              <option value="newest">Top Rated</option>
             </select>
           </fieldset>
-          <fieldset>
-            <legend>Colour</legend>
+          <fieldset class="format">
+            <legend>Format</legend>
             <ul>
-              <li><input type="checkbox" name="colour" value="black" id="black"> <label for="black">Black</label></li>
-              <li><input type="checkbox" name="colour" value="white" id="white"> <label for="white">White</label></li>
-              <li><input type="checkbox" name="colour" value="grey" id="grey"> <label for="grey">Grey</label></li>
-              <li><input type="checkbox" name="colour" value="red" id="red"> <label for="red">Red</label></li>
-              <li><input type="checkbox" name="colour" value="blue" id="blue"> <label for="blue">Blue</label></li>
+              <li><input type="checkbox" name="format" value="vinyl" id="vinyl"> <label for="black">Vinyl</label></li>
+              <li><input type="checkbox" name="format" value="CD" id="CD"> <label for="white">CD</label></li>
+              <li><input type="checkbox" name="format" value="MP3" id="MP3"> <label for="grey">MP3</label></li>
             </ul>
           </fieldset>
-          <fieldset>
-            <legend>Sizes</legend>
-            <ol>
-              <li><input type="checkbox" name="size" value="xs" id="xs"> <label for="xs">XS</label></li>
-              <li><input type="checkbox" name="size" value="sm" id="sm"> <label for="sm">S</label></li>
-              <li><input type="checkbox" name="size" value="md" id="md"> <label for="md">M</label></li>
-              <li><input type="checkbox" name="size" value="lg" id="lg"> <label for="lg">L</label></li>
-              <li><input type="checkbox" name="size" value="xl" id="xl"> <label for="xl">XL</label></li>
-            </ol>
-          </fieldset>
-          <fieldset>
-            <legend>Ratings (above)</legend>
+          <fieldset class="rating">
+            <legend>Ratings</legend>
             <ol>
               <li>
                 <input type="radio" name="rating" value="4" id="aboveFour">
@@ -114,7 +119,8 @@
               </li>
             </ol>
           </fieldset>
-        </form>
+        </div>
+        </div>
       </header>
 
       <section>
@@ -130,21 +136,12 @@
             <p>Here is a shot of this product that might entice a user to click and add it to their cart.</p>
             <form>
               <fieldset>
-                <legend>Colours</legend>
+                <legend>Format</legend>
                 <ul>
-                  <li><label><input type="radio" name="colour" value="r"> <span>Red</span></label></li>
-                  <li><label><input type="radio" name="colour" value="w"> <span>White</span></label></li>
-                  <li><label><input type="radio" name="colour" value="b"> <span>Blue</span></label></li>
+                    <li><input type="checkbox" name="format" value="vinyl" id="vinyl"> <label for="black">Vinyl</label></li>
+                    <li><input type="checkbox" name="format" value="CD" id="CD"> <label for="white">CD</label></li>
+                    <li><input type="checkbox" name="format" value="MP3" id="MP3"> <label for="grey">MP3</label></li>
                 </ul>
-              </fieldset>
-
-              <fieldset>
-                <legend>Sizes</legend>
-                <ol>
-                  <li><label><input type="radio" name="size" value="m"> <span>M</span></label></li>
-                  <li><label><input type="radio" name="size" value="l"> <span>L</span></label></li>
-                  <li><label><input type="radio" name="size" value="xl"> <span>XL</span></label></li>
-                </ol>
               </fieldset>
 
               <footer>
@@ -318,23 +315,18 @@
         </div>
       </section>
 
-      <footer>
-        <p>1-5 of 20 products found</p>
-        <nav aria-label="Product Pages">
-          <a href="#" aria-label="Previous page">prev</a>
-          <ol>
-            <li><a href="#" aria-label="Current Page, Page 1" aria-current="true">1</a></li>
-            <li><a href="#" aria-label="Page 2">2</a></li>
-            <li><a href="#" aria-label="Page 3">3</a></li>
-            <li><a href="#" aria-label="Page 4">4</a></li>
-          </ol>
-          <a href="#" aria-label="Next page">next</a>
-        </nav>
-      </footer>
+      <p>1-5 of 20 products found</p>
+      <div class="pagination">
+        <a href="#" aria-label="Previous page">prev</a>
+        <a href="#" aria-label="Current Page, Page 1" aria-current="true">1</a></li>
+        <a href="#" aria-label="Page 2">2</a></li>
+        <a href="#" aria-label="Page 3">3</a></li>
+        <a href="#" aria-label="Page 4">4</a></li>
+        <a href="#" aria-label="Next page">next</a>
+      </div>
     </main>
 
     <footer>
-      <p>&copy; Copyright, 1991.</p>
       <nav aria-label="Legal">
         <ul>
           <li><a href="#">Terms of Use</a></li>
@@ -348,6 +340,7 @@
         <li><a href="#"><span class="material-icons">alternate_email</span> Twitter</a></li>
       </ul>
     </footer>
+    <p>&copy; Copyright, 1997.</p>
 
     <script src="js/index.js"></script>
   </body>

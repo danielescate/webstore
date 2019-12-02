@@ -1,0 +1,181 @@
+@import url('https://fonts.googleapis.com/css?family=Oswald:400,600&display=swap');
+
+.logo {
+    width: 10em;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.topbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #161415;
+    margin: 0;
+    padding: 1em;
+}
+
+.item {
+    display: inline-block;
+    margin-right: 3em;
+    margin-left: 3em;
+}
+
+h2 {
+    font-family: 'Oswald', sans-serif;
+    font-size: 1.5em; 
+    padding-left: 1em;
+}
+
+.item button {
+    background-color: #161415;
+    border: none;
+    color: white;
+}
+
+.filters fieldset{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 2.3em;
+}
+
+.filters button {
+    border: none;
+    text-decoration: underline;
+}
+
+#category {
+    display: none;
+}
+
+fieldset .filters {
+    display: inline-block
+}
+
+fieldset .rating {
+    display: inline-block;
+}
+
+.rating ol {
+    list-style-type: none;
+    margin-left: -3em;
+}
+
+.topbar #links {
+    display: block;
+}
+
+.topbar #search {
+    display: none;
+}
+
+nav .primary {
+    position: fixed;
+}
+
+nav ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	background-color: #161415;
+}
+  
+nav li {
+	float: center;
+}
+  
+nav li a {
+	display: block;
+	color: white;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+}
+
+a {
+    text-decoration: none;
+    font-family: 'Oswald', sans-serif;
+}
+
+h3 {
+    font-size: 1.2em;
+    font-family: 'Oswald', sans-serif;
+}
+
+p {
+    font-family: 'Oswald', sans-serif;
+    font-size: 1.1em;
+}
+
+.products {
+    display: grid;
+    grid-template-columns: auto;
+}
+
+.product {
+    padding: 3%;
+    text-align: center;
+}
+
+.product img {
+    width: 15em;
+}
+
+fieldset {
+    font-family: 'Oswald', sans-serif;
+    font-size: 1.1em;
+}
+
+.product fieldset li {
+    display: inline;
+    padding: 0.5em;
+}
+
+.product fieldset legend {
+    text-decoration: underline;
+}
+
+article footer {
+    font-family: 'Oswald', sans-serif;
+}
+
+.pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+p {
+    text-align: center;
+}
+
+.pagination a {
+    display: inline-block;
+    color: #161415;
+    padding: 1em 2em;
+    text-decoration: none;
+}
+
+footer ul {
+    text-align: center;
+    background-color: #161415;
+    padding-bottom: 1em;
+}
+
+footer li {
+    display: inline;
+    color: white;
+}
+
+
+
+@media screen and (min-width: 1024px) {
+    .products {
+        display: grid;
+        grid-template-columns: auto auto;
+    } 
+}
