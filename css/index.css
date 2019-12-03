@@ -149,6 +149,15 @@ fieldset {
     text-decoration: underline;
 }
 
+.product footer del {
+    font-size: 1.3em;
+}
+
+.product footer ins {
+    font-size: 1.8em;
+    text-decoration: none;
+}
+
 article footer {
     font-family: 'Oswald', sans-serif;
 }
