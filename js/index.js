@@ -7,7 +7,8 @@ const products = [
       salePrice: `$22`,
       img: `img/alvvays-vinyl.jpg`,
       rating: `<dd>4.5 <span class="material-icons">star</span><span class="material-icons">star</span><span class="material-icons">star</span><span class="material-icons">star</span><span class="material-icons">star_half</span></dd>`,
-      genre: null
+      genre: "indie",
+      sort: "a-e"
     }, {
       album: `Suck it and See`,
       artist: `Arctic Monkeys`,
@@ -16,7 +17,8 @@ const products = [
       salePrice: `$28`,
       img: `img/suck-it-and-see-vinyl.jpg`,
       rating: `<dd>4 <span class="material-icons">star</span><span class="material-icons">star</span><span class="material-icons">star</span><span class="material-icons">star</span></dd>`,
-      genre: null
+      genre: "alternative",
+      sort: "a-e"
     }, {
       album: `Uncle, Duke, & The Chief`,
       artist: `Born Ruffians`,
@@ -25,7 +27,8 @@ const products = [
       salePrice: `$24`,
       img: `img/uncle-duke-and-the-chief-vinyl.jpg`,
       rating: `<dd>4 <span class="material-icons">star</span><span class="material-icons">star</span><span class="material-icons">star</span><span class="material-icons">star</span></dd>`,
-      genre: null
+      genre: "indie",
+      sort: "a-e"
     }, {
       album: `Fantasies`,
       artist: `Metric`,
@@ -34,7 +37,8 @@ const products = [
       salePrice: `$26`,
       img: `img/fantasies-vinyl.jpg`,
       rating: `<dd>3.5 <span class="material-icons">star</span><span class="material-icons">star</span><span class="material-icons">star</span><span class="material-icons">star_half</span></dd>`,
-      genre: null
+      genre: "alternative",
+      sort: "l-r"
     }, {
       album: `Currents`,
       artist: `Tame Impala`,
@@ -43,7 +47,8 @@ const products = [
       salePrice: `$33`,
       img: `img/currents-vinyl.jpg`,
       rating: `<dd>5 <span class="material-icons">star</span><span class="material-icons">star</span><span class="material-icons">star</span><span class="material-icons">star</span><span class="material-icons">star</span></dd>`,
-      genre: null
+      genre: "alternative",
+      sort: "s-z"
     }, {
       album: `Forcefield`,
       artist: `Tokyo Police Club`,
@@ -52,7 +57,8 @@ const products = [
       salePrice: `$28`,
       img: `img/forcefield-vinyl.jpg`,
       rating: `<dd>3.5 <span class="material-icons">star</span><span class="material-icons">star</span><span class="material-icons">star</span><span class="material-icons">star_half</span></dd>`,
-      genre: null
+      genre: "alternative",
+      sort: "s-z"
     }, {
       album: `Ruff`,
       artist: `Born Ruffians`,
@@ -61,7 +67,8 @@ const products = [
       salePrice: `$24`,
       img: `img/ruff-vinyl.jpg`,
       rating: `<dd>3.5 <span class="material-icons">star</span><span class="material-icons">star</span><span class="material-icons">star</span><span class="material-icons">star_half</span></dd>`,
-      genre: null
+      genre: "indie",
+      sort: "a-e"
     }, {
       album: `The Suburbs`,
       artist: `Arcade Fire`,
@@ -70,7 +77,8 @@ const products = [
       salePrice: `$40`,
       img: `img/the-suburbs-vinyl.jpg`,
       rating: `<dd>5 <span class="material-icons">star</span><span class="material-icons">star</span><span class="material-icons">star</span><span class="material-icons">star</span><span class="material-icons">star</span></dd>`,
-      genre: null
+      genre: "alternative",
+      sort: "a-e"
     }, {
       album: `Antisocialites`,
       artist: `Alvvays`,
@@ -79,7 +87,8 @@ const products = [
       salePrice: `$25`,
       img: `img/antisocialites-vinyl.jpg`,
       rating: `<dd>3.5 <span class="material-icons">star</span><span class="material-icons">star</span><span class="material-icons">star</span><span class="material-icons">star_half</span></dd>`,
-      genre: null
+      genre: "indie",
+      sort: "a-e"
     }, {
       album: `Reflektor`,
       artist: `Arcade Fire`,
@@ -88,25 +97,130 @@ const products = [
       salePrice: `$40`,
       img: `img/reflektor-vinyl.jpg`,
       rating: `<dd>4 <span class="material-icons">star</span><span class="material-icons">star</span><span class="material-icons">star</span><span class="material-icons">star</span></dd>`,
-      genre: null
-    },   
+      genre: "alternative",
+      sort: "a-e"
+    }, {
+      album: `Homework`,
+      artist: `Daft Punk`,
+      year: 1997,
+      price: `$20`,
+      salePrice: `$22`,
+      img: `img/homework-vinyl.jpg`,
+      rating: `<dd>4.5 <span class="material-icons">star</span><span class="material-icons">star</span><span class="material-icons">star</span><span class="material-icons">star</span><span class="material-icons">star_half</span></dd>`,
+      genre: "dance",
+      sort: "a-e"
+    }, {
+      album: `Mechanical Bull`,
+      artist: `Kings of Leon`,
+      year: 2013,
+      price: `$22`,
+      salePrice: `$26`,
+      img: `img/mechanical-bull-vinyl.jpg`,
+      rating: `<dd>3.5 <span class="material-icons">star</span><span class="material-icons">star</span><span class="material-icons">star</span><span class="material-icons">star_half</span></dd>`,
+      genre: "rock",
+      sort: "f-k"
+    }, {
+      album: `2001`,
+      artist: `Dr. Dre`,
+      year: 1999,
+      price: `$20`,
+      salePrice: `$24`,
+      img: `img/2001-vinyl.jpg`,
+      rating: `<dd>4 <span class="material-icons">star</span><span class="material-icons">star</span><span class="material-icons">star</span><span class="material-icons">star</span></dd>`,
+      genre: "hip-hop/rap",
+      sort: "a-e"
+    }, {
+      album: `4x4=12`,
+      artist: `Deadmau5`,
+      year: 2010,
+      price: `$25`,
+      salePrice: `$28`,
+      img: `img/4x4=12-vinyl.jpg`,
+      rating: `<dd>4 <span class="material-icons">star</span><span class="material-icons">star</span><span class="material-icons">star</span><span class="material-icons">star</span></dd>`,
+      genre: "dance",
+      sort: "a-e"
+    }, {
+      album: `Back in Black`,
+      artist: `AC/DC`,
+      year: 1980,
+      price: `$30`,
+      salePrice: `$33`,
+      img: `img/back-in-black-vinyl.jpg`,
+      rating: `<dd>5 <span class="material-icons">star</span><span class="material-icons">star</span><span class="material-icons">star</span><span class="material-icons">star</span><span class="material-icons">star</span></dd>`,
+      genre: "rock",
+      sort: "a-e"
+    }, {
+      album: `Neva Left`,
+      artist: `Snoop Dogg`,
+      year: 2017,
+      price: `$25`,
+      salePrice: `$28`,
+      img: `img/neva-left-vinyl.jpg`,
+      rating: `<dd>3.5 <span class="material-icons">star</span><span class="material-icons">star</span><span class="material-icons">star</span><span class="material-icons">star_half</span></dd>`,
+      genre: "hip-hop/rap",
+      sort: "s-z"
+    }, {
+      album: `Rumours`,
+      artist: `Fleetwood Mac`,
+      year: 1977,
+      price: `$20`,
+      salePrice: `$24`,
+      img: `img/rumours-vinyl.jpg`,
+      rating: `<dd>3.5 <span class="material-icons">star</span><span class="material-icons">star</span><span class="material-icons">star</span><span class="material-icons">star_half</span></dd>`,
+      genre: "rock",
+      sort: "f-k"
+    }, {
+      album: `Mi Vida Es Cantar`,
+      artist: `Celia Cruz`,
+      year: 1998,
+      price: `$35`,
+      salePrice: `$40`,
+      img: `img/mi-vida-vinyl.jpg`,
+      rating: `<dd>5 <span class="material-icons">star</span><span class="material-icons">star</span><span class="material-icons">star</span><span class="material-icons">star</span><span class="material-icons">star</span></dd>`,
+      genre: "latin",
+      sort: "a-e"
+    }, {
+      album: `Shrek 2 Soundtrack`,
+      artist: `Various Artists`,
+      year: 2004,
+      price: `$22`,
+      salePrice: `$25`,
+      img: `img/shrek-vinyl.jpeg`,
+      rating: `<dd>3.5 <span class="material-icons">star</span><span class="material-icons">star</span><span class="material-icons">star</span><span class="material-icons">star_half</span></dd>`,
+      genre: "soundtrack",
+      sort: "s-z"
+    }, {
+      album: `Barrio Fino`,
+      artist: `Daddy Yankee`,
+      year: 2004,
+      price: `$35`,
+      salePrice: `$40`,
+      img: `img/barrio-fino-vinyl.jpg`,
+      rating: `<dd>4 <span class="material-icons">star</span><span class="material-icons">star</span><span class="material-icons">star</span><span class="material-icons">star</span></dd>`,
+      genre: "latin",
+      sort: "a-e"
+  },  
 ]
+
 
 function getProductsAsHtmlString(products) {
     return `<article class="product">
     <header>
       <img src="${products.img}" alt="${products.album}">
     </header>
-    <h3>${products.artist} - ${products.album}</h3>
-    <p>${products.year}</p>
+    <h3>${products.artist} - ${products.album} (${products.year})</h3>
+    <p></p>
     <form>
         <fieldset>
             <legend>Format:</legend>
                 <ul>
-                  <li><label><input type="radio" name="format" value="vinyl"> <span>Vinyl</span></label></li>
-                  <li><label><input type="radio" name="format" value="CD"> <span>CD</span></label></li>
-                  <li><label><input type="radio" name="format" value="MP3"> <span>MP3</span></label></li>
+                  <li><label><input type="radio" name="format" id="vinyl" onclick="check1()"> <span>Vinyl</span></label></li>
+                  <li><label><input type="radio" name="format" id="CD" onclick="check2()"> <span>CD</span></label></li>
+                  <li><label><input type="radio" name="format" id="MP3" onclick="check3()"> <span>MP3</span></label></li>
                 </ul>
+                <p id="in-stock">In Stock</p>
+                <p id="out-stock">Out of Stock</p>
+                <p id="available">Available</p>
         </fieldset>
 
         <footer>
@@ -115,13 +229,13 @@ function getProductsAsHtmlString(products) {
               <dd>${products.rating}</dd>
             </dl>
             <data value="39"><del>${products.salePrice}</del> <ins>${products.price}</ins></data>
-            <button type="button"><span class="material-icons">add_shopping_cart</span> Add to Cart</button>
-            <button type="button"><span class="material-icons">favorite</span></button>
-            <a href="#">see more</a>
+            <button class="add" type="button"><span class="material-icons">add_shopping_cart</span> Add to Cart</button>
+            <button class="add" type="button"><span class="material-icons">favorite</span></button>
          </footer>
     </form>
     </article>`;
 }
+
 
 function renderProducts(arr) {
   const arrOfHtml = arr.map(getProductsAsHtmlString);
@@ -135,8 +249,43 @@ function renderProducts(arr) {
 
 renderProducts(products)
 
-//<dd>4.4 <span class="material-icons">star</span><span class="material-icons">star</span><span class="material-icons">star</span><span class="material-icons">star</span><span class="material-icons">star_half</span></dd>
 
+var items = 0;
+
+function addItem() {
+  items += 1;
+  document.getElementById("itemCount").innerHTML = items;
+};
+
+function check1() {
+  var radio = document.getElementById("vinyl");
+  var text = document.getElementById("in-stock");
+  if (radio.selected == true){
+    text.style.display = "none";
+  } else {
+     text.style.display = "block";
+  }
+}
+
+function check2() {
+  var radio = document.getElementById("CD");
+  var text = document.getElementById("out-stock");
+  if (radio.selected == true){
+    text.style.display = "none";
+  } else {
+     text.style.display = "block";
+  }
+}
+
+function check3() {
+  var radio = document.getElementById("MP3");
+  var text = document.getElementById("available");
+  if (radio.selected == true){
+    text.style.display = "none";
+  } else {
+     text.style.display = "block";
+  }
+}
 
 function navButton() {
   var nav = document.getElementById("links");
@@ -156,11 +305,48 @@ function searchButton() {
     }
   }
 
-  function filterButton() {
-    var nav = document.getElementById("category");
-    if (nav.style.display === "none") {
-      nav.style.display = "block";
-    } else {
-      nav.style.display = "none";
-    }
+function filterButton() {
+  var nav = document.getElementById("category");
+  if (nav.style.display === "none") {
+    nav.style.display = "block";
+  } else {
+    nav.style.display = "none";
   }
+}
+
+function pageButton() {
+  products.splice(5,5);
+  
+}
+
+console.log(products);
+
+function checkInput(event) {
+  const userIsLookingFor = event.target.value.toLowerCase();
+ 
+  const onlyMatchingNames = products.filter(prod => prod.artist.toLowerCase().includes(userIsLookingFor));
+  renderProducts(onlyMatchingNames);
+}
+
+document.getElementById('productsAlbum').addEventListener('input', event => checkInput(event) )
+
+
+function checkCategory(event) {
+  const userIsLookingFor = event.target.value;
+
+  const onlyMatchingCategories = products.filter(prod => prod.genre == userIsLookingFor);
+  renderProducts(onlyMatchingCategories);
+}
+
+document.getElementById('productsGenre').addEventListener('change', event => checkCategory(event) )
+
+
+function checkFormat(event) {
+  const userIsLookingFor = event.target.value;
+
+  const onlyMatchingFormat = products.filter(prod => prod.sort == userIsLookingFor);
+  renderProducts(onlyMatchingFormat);
+}
+
+document.getElementById('productsSort').addEventListener('change', event => checkFormat(event) )
+
