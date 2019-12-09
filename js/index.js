@@ -249,7 +249,7 @@ function renderProducts(arr) {
 
 renderProducts(products)
 
-
+// Cart
 var items = 0;
 
 function addItem() {
@@ -257,6 +257,8 @@ function addItem() {
   document.getElementById("itemCount").innerHTML = items;
 };
 
+
+//Format
 function check1() {
   var radio = document.getElementById("vinyl");
   var text = document.getElementById("in-stock");
@@ -287,6 +289,8 @@ function check3() {
   }
 }
 
+
+// Nav hide/show
 function navButton() {
   var nav = document.getElementById("links");
   if (nav.style.display === "block") {
@@ -296,6 +300,7 @@ function navButton() {
   }
 }
 
+// Search hide/show
 function searchButton() {
     var nav = document.getElementById("search");
     if (nav.style.display === "none") {
@@ -303,8 +308,9 @@ function searchButton() {
     } else {
       nav.style.display = "none";
     }
-  }
+}
 
+// Filter dropdown
 function filterButton() {
   var nav = document.getElementById("category");
   if (nav.style.display === "none") {
@@ -314,13 +320,12 @@ function filterButton() {
   }
 }
 
+// Pages
 function pageButton() {
-  products.splice(5,5);
-  
+  products.splice(5,5); 
 }
 
-console.log(products);
-
+// Search
 function checkInput(event) {
   const userIsLookingFor = event.target.value.toLowerCase();
  
@@ -330,7 +335,7 @@ function checkInput(event) {
 
 document.getElementById('productsAlbum').addEventListener('input', event => checkInput(event) )
 
-
+// Sort: genre
 function checkCategory(event) {
   const userIsLookingFor = event.target.value;
 
@@ -340,7 +345,7 @@ function checkCategory(event) {
 
 document.getElementById('productsGenre').addEventListener('change', event => checkCategory(event) )
 
-
+// Sort: artists
 function checkFormat(event) {
   const userIsLookingFor = event.target.value;
 
